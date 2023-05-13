@@ -1,0 +1,37 @@
+/* global */
+@font-face {
+	font-family: "FiraMono-Regular";
+	src: url("assets/fonts/FiraMono-Regular.otf")
+}
+
+.body {
+	font-family: 'FiraMono-Regular', Courier;
+	margin: 0px;
+}
+
+.link {
+	color: black;
+	text-decoration: none;
+}
+
+/* header */
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2vh;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	font-size: 3vh;
+}
+
+.headerPart {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1vw;
+}
+
+.headerLogo {
+	height: 4vh;
+}
