@@ -1,7 +1,12 @@
 /* global */
 @font-face {
 	font-family: "FiraMono-Regular";
-	src: url("assets/fonts/FiraMono-Regular.otf")
+	src: url("assets/fonts/FiraMono-Regular.otf"), format("opentype")
+}
+
+@font-face {
+	font-family: "FiraMono-bold";
+	src: url("assets/fonts/FiraMono-Bold.otf"), format("opentype")
 }
 
 .body {
@@ -56,4 +61,11 @@
 
 .motivatingText {
 	font-size: 3vh;
+	line-height: 5vh;
+}
+
+.motivationSignature {
+	font-size: 4vh;
+	font-family: "FiraMono-Bold";
+	display: inline;
 }
