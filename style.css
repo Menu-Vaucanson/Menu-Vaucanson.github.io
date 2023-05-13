@@ -35,3 +35,25 @@
 .headerLogo {
 	height: 4vh;
 }
+
+/* motivating */
+
+.motivating {
+	background-color: #403f4c;
+	/* 100wv - pading*2 */
+	width: calc(70vw);
+	/* beacause ??? user agent add 8px of margin for body */
+	margin-left: -8px;
+	padding: 2vh;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	color: white;
+}
+
+.motivatingTitle {
+	font-size: 7vh;
+}
+
+.motivatingText {
+	font-size: 3vh;
+}
