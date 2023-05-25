@@ -9,9 +9,9 @@
 	src: url("./assets/fonts/FiraMono-Bold.otf"), format("opentype")
 }
 
-.body {
+body {
 	font-family: 'FiraMono-Regular', Courier;
-	margin: 0px;
+	margin: 0px !important;
 }
 
 .link {
@@ -34,7 +34,7 @@
 	padding: 2vh;
 	padding-left: 15vw;
 	padding-right: 15vw;
-	font-size: 3vh;
+	font-size: medium;
 }
 
 .headerPart {
@@ -54,67 +54,77 @@
 
 /* motivating */
 
-.motivating {
-	background-color: #403f4c;
-	/* 100wv - pading*2 */
-	width: calc(70vw);
-	/* beacause ??? user agent add 8px of margin for body */
-	margin-left: -8px;
-	padding: 2vh;
-	padding-left: 15vw;
-	padding-right: 15vw;
-	color: white;
-}
-
-.motivatingTitle {
-	font-size: 7vh;
-}
-
-.motivatingText {
-	font-size: 3vh;
-	line-height: 5vh;
-}
-
-.motivationSignature {
-	font-size: 4vh;
-	font-family: "FiraMono-Bold";
-	display: inline;
-}
-
-.github {
-	color: white;
-	text-decoration: none;
-}
-
-/* contributor */
-.contributor {
-	padding-left: 15vw;
-	padding-right: 15vw;
-}
-
-.contributorLogoBox {
-	width: 70vw;
+.goodby {
+	height: 70vh;
+	width: 99vw;
+	font-size: xx-large;
 	display: flex;
+	color: white;
+	align-items: center;
 	justify-content: center;
+	background: #C04848;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #480048, #C04848);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #480048, #C04848);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.thaks {
+	height: 70vh;
+	width: 99vw;
+	color: black;
+}
+
+.thaksTitle {
+	font-size: xx-large;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.thaksUserContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4vmax;
+}
+
+.users {
+	position: relative;
+	width: 65vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 	gap: 2vh;
 }
 
-.contributorLogo {
+.userBox {
+	display: flex;
+	align-items: center;
+	gap: 1vh;
+	padding: 1vh;
+	border-radius: 1vh;
+	transition-duration: 300ms;
+}
+
+.userBox:hover {
+	background-color: #4800487c;
+}
+
+.userImage {
 	border-radius: 50%;
-	width: 8vw;
+	height: 20vh;
+	width: 20vh;
+	box-shadow: -4px -3px 90px 1px rgba(0, 0, 0, 0.35);
 }
 
-.contributorlogolink {
-	width: 10vw;
-	height: 10vw;
-	text-align: center;
+.userPsedo {
+	font-size: larger;
+	font-family: "FiraMono-bold";
 }
 
-.contributorlogolink:hover {
-	background-color: #dad4d4;
-}
-
-.contributorGrade {
-	font-family: 'FiraMono-Bold';
-	color: #1a1acd;
+.userRole {
+	font-size: small;
 }
