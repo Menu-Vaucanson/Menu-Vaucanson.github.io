@@ -12,6 +12,9 @@
 body {
 	font-family: 'FiraMono-Regular', Courier;
 	margin: 0px !important;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .link {
@@ -32,9 +35,8 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 2vh;
-	padding-left: 15vw;
-	padding-right: 15vw;
 	font-size: medium;
+	width: 90vw;
 }
 
 .headerPart {
@@ -71,12 +73,17 @@ body {
 }
 
 .thaks {
-	height: 70vh;
-	width: 99vw;
 	color: black;
+	width: 60vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 4vh;
 }
 
 .thaksTitle {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 	font-size: xx-large;
 	display: flex;
 	align-items: center;
@@ -127,4 +134,32 @@ body {
 
 .userRole {
 	font-size: small;
+}
+
+.about {
+	width: 99vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	background: #C04848;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #480048, #C04848);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #480048, #C04848);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.aboutTitle {
+	font-size: xx-large;
+	text-align: center;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+.aboutText {
+	width: 60vw;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 }
