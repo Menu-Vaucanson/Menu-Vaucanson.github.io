@@ -59,7 +59,8 @@ body {
 .goodby {
 	height: 70vh;
 	width: 99vw;
-	font-size: xx-large;
+	font-size: 5vmax;
+	text-align: center;
 	display: flex;
 	color: white;
 	align-items: center;
@@ -82,58 +83,50 @@ body {
 }
 
 .thaksTitle {
+	font-size: 2.5vmax;
+	text-align: center;
 	padding-top: 2vh;
 	padding-bottom: 2vh;
-	font-size: xx-large;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
 }
 
 .thaksUserContainer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 4vmax;
-}
-
-.users {
-	position: relative;
-	width: 65vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	flex-wrap: wrap;
-	gap: 2vh;
+	gap: 4vmax;
 }
 
 .userBox {
 	display: flex;
 	align-items: center;
+	flex-direction: column;
+	text-align: center;
 	gap: 1vh;
 	padding: 1vh;
-	border-radius: 1vh;
 	transition-duration: 300ms;
 }
 
 .userBox:hover {
+	border-radius: 1vh;
 	background-color: #4800487c;
 }
 
 .userImage {
 	border-radius: 50%;
-	height: 20vh;
-	width: 20vh;
+	height: 10vmax;
+	width: 10vmax;
 	box-shadow: -4px -3px 90px 1px rgba(0, 0, 0, 0.35);
 }
 
 .userPsedo {
-	font-size: larger;
+	font-size: 2vmax;
 	font-family: "FiraMono-bold";
 }
 
 .userRole {
-	font-size: small;
+	font-size: 1.5vmax;
 }
 
 .about {
@@ -152,7 +145,7 @@ body {
 }
 
 .aboutTitle {
-	font-size: xx-large;
+	font-size: 2.5vmax;
 	text-align: center;
 	padding-top: 2vh;
 	padding-bottom: 2vh;
@@ -162,4 +155,13 @@ body {
 	width: 60vw;
 	padding-top: 2vh;
 	padding-bottom: 2vh;
+}
+
+@media ((aspect-ratio <1) or (orientation: portrait)){
+	.aboutText{
+		width: 95vw;
+	}
+	.about, .goodby {
+		width: 100vw;
+	}
 }
