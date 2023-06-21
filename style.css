@@ -1,32 +1,29 @@
 /* global */
 @font-face {
-	font-family: "FiraMono-Regular";
-	src: url("./assets/fonts/FiraMono-Regular.otf"), format("opentype")
+	font-family: "Fira Mono";
+	src: url("assets/fonts/FiraMono-Regular.otf")
 }
 
 @font-face {
-	font-family: "FiraMono-bold";
-	src: url("./assets/fonts/FiraMono-Bold.otf"), format("opentype")
+	font-family: "Fira Mono Bold";
+	src: url("assets/fonts/FiraMono-Bold.otf")
 }
 
 body {
-	font-family: 'FiraMono-Regular', Courier;
-	margin: 0px !important;
+	font-family: 'Fira Mono', 'Courier New';
+	margin: 0 !important;
+	padding: 0;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	color: black;
 }
 
 .link {
-	transition-duration: 400ms;
 	color: black;
 	text-decoration: none;
+	transition-duration: 300ms;
 	padding: 1vh;
-	display: inline;
-}
-
-.link:hover {
-	border-radius: 1vh;
 }
 
 /* header */
@@ -50,13 +47,18 @@ body {
 	height: 4vh;
 }
 
-.headerlink:hover {
-	background-color: #dad4d4;
+.headerLink {
+	padding: 2vh;
+	border-radius: 1vh;
+}
+
+.headerLink:hover {
+	background-color: #D9D9D9;
 }
 
 /* motivating */
 
-.goodby {
+.goodbye {
 	height: 70vh;
 	width: 99vw;
 	font-size: 5vmax;
@@ -66,31 +68,30 @@ body {
 	align-items: center;
 	justify-content: center;
 	background: #C04848;
-	/* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #480048, #C04848);
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #480048, #C04848);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(70deg, #004ACB, #AF002C);
+	background: linear-gradient(70deg, #004ACB, #AF002C);
 }
 
-.thaks {
+.thanks {
 	color: black;
-	width: 60vw;
+	width: 80vw;
 	display: flex;
 	flex-direction: column;
+	gap: 5vh;
 	align-items: center;
-	padding-bottom: 4vh;
+	padding: 10vh 0;
 }
 
-.thaksTitle {
+.thanksTitle {
 	font-size: 2.5vmax;
 	text-align: center;
 	padding-top: 2vh;
 	padding-bottom: 2vh;
 	text-align: center;
+	font-family: 'Fira Mono Bold';
 }
 
-.thaksUserContainer {
+.thanksUserContainer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -104,13 +105,13 @@ body {
 	flex-direction: column;
 	text-align: center;
 	gap: 1vh;
-	padding: 1vh;
+	padding: 5vmin 5vmax;
+	border-radius: 1vh;
 	transition-duration: 300ms;
 }
 
 .userBox:hover {
-	border-radius: 1vh;
-	background-color: #4800487c;
+	background-color: #D9D9D9;
 }
 
 .userImage {
@@ -118,11 +119,12 @@ body {
 	height: 10vmax;
 	width: 10vmax;
 	box-shadow: -4px -3px 90px 1px rgba(0, 0, 0, 0.35);
+	background-color: white;
 }
 
-.userPsedo {
+.userPseudo {
 	font-size: 2vmax;
-	font-family: "FiraMono-bold";
+	font-family: "Fira Mono Bold";
 }
 
 .userRole {
@@ -131,17 +133,15 @@ body {
 
 .about {
 	width: 99vw;
+	padding: 10vh 0;
 	display: flex;
+	gap: 5vh;
 	flex-direction: column;
 	align-items: center;
 	color: white;
 	background: #C04848;
-	/* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #480048, #C04848);
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #480048, #C04848);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: -webkit-linear-gradient(120deg, #007450, #CA9754);
+	background: linear-gradient(120deg, #007450, #CA9754);
 }
 
 .aboutTitle {
@@ -155,13 +155,34 @@ body {
 	width: 60vw;
 	padding-top: 2vh;
 	padding-bottom: 2vh;
+	text-align: justify;
 }
 
-@media ((aspect-ratio <1) or (orientation: portrait)){
-	.aboutText{
-		width: 95vw;
+@media ((aspect-ratio <1) or (orientation: portrait)) {
+	.aboutText {
+		width: 95vmin;
 	}
-	.about, .goodby {
-		width: 100vw;
+
+	.about,
+	.goodbye {
+		width: 100vmin;
+	}
+
+	.headerLink,
+	.headerName {
+		font-size: 2vmax;
+	}
+
+	.thanksTitle {
+		font-size: 7vmin;
+	}
+
+	.thanksUserContainer {
+		flex-direction: column;
+	}
+
+	.userImage {
+		width: 20vmax;
+		height: 20vmax;
 	}
 }
