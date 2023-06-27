@@ -1,0 +1,38 @@
+SetEnv TZ Europe/Paris
+
+#Removing ".html" in URL
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+#Switching to errors pages
+ErrorDocument 400 /index.html
+ErrorDocument 401 /index.html
+ErrorDocument 402 /index.html
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 405 /index.html
+ErrorDocument 406 /index.html
+ErrorDocument 407 /index.html
+ErrorDocument 408 /index.html
+ErrorDocument 409 /index.html
+ErrorDocument 410 /index.html
+ErrorDocument 411 /index.html
+ErrorDocument 412 /index.html
+ErrorDocument 413 /index.html
+ErrorDocument 414 /index.html
+ErrorDocument 415 /index.html
+ErrorDocument 416 /index.html
+ErrorDocument 417 /index.html
+ErrorDocument 421 /index.html
+ErrorDocument 422 /index.html
+ErrorDocument 423 /index.html
+ErrorDocument 424 /index.html
+ErrorDocument 426 /index.html
+ErrorDocument 428 /index.html
+ErrorDocument 429 /index.html
+ErrorDocument 451 /index.html
