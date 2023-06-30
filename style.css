@@ -12,9 +12,9 @@
 body {
 	font-family: 'Fira Mono', 'Courier New';
 	margin: 0 !important;
+	border: 0;
 	padding: 0;
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	color: black;
 	overflow-x: hidden;
@@ -61,7 +61,7 @@ body {
 
 .goodbye {
 	height: 70vh;
-	width: 99vw;
+	width: 100vw;
 	font-size: 5vmax;
 	text-align: center;
 	display: flex;
@@ -134,7 +134,7 @@ body {
 }
 
 .about {
-	width: 99vw;
+	width: 100vw;
 	padding: 10vh 0;
 	display: flex;
 	gap: 5vh;
