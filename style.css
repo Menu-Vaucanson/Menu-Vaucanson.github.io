@@ -32,9 +32,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 2vh;
-	font-size: medium;
-	width: 90vw;
+	padding: 2vh 2vw;
+	width: 96vw;
 }
 
 .headerPart {
@@ -42,6 +41,7 @@ body {
 	flex-direction: row;
 	align-items: center;
 	gap: 1vw;
+	font-size: 1vmax;
 }
 
 .headerLogo {
@@ -58,7 +58,6 @@ body {
 }
 
 /* motivating */
-
 .goodbye {
 	height: 70vh;
 	width: 100vw;
@@ -106,7 +105,7 @@ body {
 	flex-direction: column;
 	text-align: center;
 	gap: 1vmin;
-	width: 25vw;
+	width: 25vmax;
 	padding: 5vmin 0;
 	border-radius: 1vh;
 	transition-duration: 300ms;
@@ -114,6 +113,7 @@ body {
 
 .userBox:hover {
 	background-color: #D9D9D9;
+	transform: translateY(-1vh);
 }
 
 .userImage {
@@ -154,14 +154,16 @@ body {
 }
 
 .aboutText {
-	width: 60vw;
-	padding: 2vh 0;
+	width: 70vw;
 	text-align: justify;
+	font-size: 1.5vmax;
+	line-height: 4.5vmin;
 }
 
-@media ((aspect-ratio <1) or (orientation: portrait)) {
+@media ((aspect-ratio < 1) or (orientation: portrait)) {
 	.aboutText {
 		width: 95vmin;
+		font-size: 1.5vh;
 	}
 
 	.about,
@@ -185,5 +187,17 @@ body {
 	.userImage {
 		width: 20vmax;
 		height: 20vmax;
+	}
+
+	.userBox:hover {
+		transform: initial;
+	}
+
+	.userPseudo {
+		font-size: 3vmax;
+	}
+
+	.userRole {
+		font-size: 2vmax;
 	}
 }
